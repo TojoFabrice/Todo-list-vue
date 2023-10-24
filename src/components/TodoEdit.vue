@@ -30,7 +30,7 @@ const onSubmit = () => {
         index: props.taskIndex,
         newName: todoName.value,
     });
-    todoName.value = "";
+
     isOpen.value = false;
 };
 </script>
@@ -48,8 +48,6 @@ const onSubmit = () => {
                 <Input
                     type="text"
                     v-model="todoName"
-                    :value="props.taskName"
-                    :default-value="props.taskName"
                 />
                 <DialogFooter class="mt-4">
                     <Button
