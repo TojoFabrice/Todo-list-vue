@@ -35,11 +35,9 @@ const onTaskEdited = ({
 
 <template>
     <div class="mx-5 mt-10 max-w-4xl lg:mx-auto">
-        <h4 class="my-4 text-lg font-semibold">({{ tasks.length }}) Taches</h4>
+        <h4 class="my-4 text-lg font-semibold">({{ incompleteTasksCount }}) taches incomplètes </h4>
         <Table class="border rounded-md">
-            <TableCaption>
-                ({{ incompleteTasksCount }}) taches incomplètes</TableCaption
-            >
+            <TableCaption>({{ tasks.length }}) Taches</TableCaption>
             <TableHeader>
                 <TableRow>
                     <TableHead> </TableHead>
